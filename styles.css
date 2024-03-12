@@ -359,9 +359,78 @@ footer a:hover {
     width:90px;
 }
 
+/* Dispositivos móviles */
+@media(max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+
+/* Cambia la alineación. El logo del título se queda en la parte superior, los enlaces de navegación ahora se muestran debajo*/
+
+.navbar .flex {
+  flex-direction: column;
+}
 
 
+/* Cuando pasamos encima el ratón, retienen el texto blanco y cambia el borde a negro */
 
+.navbar a:hover {
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+
+/* Establecer el color púrpura para el fondo de los enlaces de navegación, redondear las esquinas de los bordes y darle algo de espaciado*/
+
+.navbar ul {
+  background: #9867C5;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+
+/* Alinear el texto al centro */
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+
+/* Reducir el tamaño de la fuente */
+
+.little-info {
+  font-size: 13px;
+}
+
+
+/* Reducir el ancho de la imágen */
+
+.image {
+  width: 350px;
+  margin-left: 70px;
+}
+
+.stat {
+  margin-bottom: 40px;
+}
+
+
+/* Mover el círculo una vez más */
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+}
 
 
 
