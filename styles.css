@@ -176,6 +176,58 @@ p {
   max-width: 1400px;
 }
 
+/* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/* Apunta a todos los parrafos con la clase CSS text */
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;
+}
+
+/* Mostrar horizontalmente, poner un poco de espacio alrededor */
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Agregar algo de padding alrededor del contenedor. Alinear el texto al centro */
+.stats {
+  padding: 45px 50px;
+  text-align: center;
+}
+
+
+
+
+
+
 
 
 
