@@ -224,8 +224,140 @@ p {
 }
 
 
+/* Aplicar margen y ancho */
+.stat {
+  margin: 0 30px;
+  text-align: center;
+  width: 800px;
+}
 
 
+.stats .fa {
+  color: purple;
+}
+
+.testimonial {
+  color: black;
+  padding: 40px;
+}
+
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+  height: 100%;
+  clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+text-align: center;
+}
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
+}
+
+/* Add padding around the footer as well */
+
+footer {
+  background-color: purple;
+  padding: 20px 10px;
+}
+
+/* Sets all link texts to white and puts margin to the left and right */
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;
+}
+
+/* Tablets y pantallas más pequeñas */
+
+@media(max-width: 768px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+/* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+/* Esto restablece el ancho del contendor de la imagen y agrega margen a la izquierda 
+*/ 
+
+.image {
+  width: 600px;
+  margin-left: 80px;
+}
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+  flex-direction: column;
+}
+
+.stats {
+  text-align: center;
+}
+
+/* Asegura que cada sección en las estadísticas no exceda el ancho del elemento padre. */
+
+.stat {
+  width: 100%;
+  padding-right: 80px;
+}
+
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 270px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
 
 
 
